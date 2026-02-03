@@ -1,0 +1,8 @@
+[phases.setup]
+  runtime = "php@8.2"
+
+[phases.build]
+  install = "composer install --no-dev"
+
+[phases.start]
+  command = "php -S 0.0.0.0:$PORT -t ."
