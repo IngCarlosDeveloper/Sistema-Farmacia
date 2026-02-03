@@ -5,6 +5,11 @@ define('DB_NAME', getenv('DB_NAME'));
 define('DB_USER', getenv('DB_USER'));
 define('DB_PASS', getenv('DB_PASS'));
 
+// Credenciales hardcoded de administrador
+define('ADMIN_USERNAME', 'admin');
+define('ADMIN_PASSWORD', 'admin123');
+
+
 function getDBConnection() {
     try {
         $dsn = "pgsql:host=" . DB_HOST .
